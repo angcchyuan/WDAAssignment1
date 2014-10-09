@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Hi Welcome to WINESTORE </title>
+</head>
+
+<body>
+
+<?php
+$con=mysqli_connect("localhost", "root", "", "winestore";
+if(mysqli_connect_errno())
+{
+	echo "Failed to connect to MySQL: ".mysqli_connect_error();
+}
+mysqli_close($con);
+?>
+
+<form method="post" action=".php" id="">
+Search Wine Name: <input type="text" name="wine_name"><br><br>
+Searc Minimum number of Customer who have purchase each Wine: <input type = "text" name="cusNum"><br><br>
+Search Minimum Number of Wines in Stock per Wine: <input type = "text" name="stockNum"><br><br>
+Search Dollar cost range: MAX($): <input type="text" name="maxDollar" id="maxDollar"> MIN($): <input type="text" name="minDollar" id="minDollar"><br><br>
+<input type="submit" value="Search" name="submit">
+</form>
+</body>
+
+</html>
