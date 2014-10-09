@@ -1,0 +1,21 @@
+<?php
+$con=mysqli_connect("localhost", "root", "", "winestore";
+if(mysqli_connect_errno())
+{
+	echo "Failed to connect to MySQL: ".mysqli_connect_error();
+}
+mysqli_close($con);
+
+	
+	$wineName = $_GET["wineName"];
+	$region = $_GET["region"];
+	$wineryName = $_GET["wineryName"];
+	$sYear = $_GET["sYear"];
+	$eYear = $_GET["eYear"];
+	$cusNum = $_GET["cusNum"];
+	$stockNum = $_GET["stockNum"];
+	$maxDollar	= $_GET["maxDollar"];
+	$minDollar = $_GET["minDollar"];
+	
+	
+?>
